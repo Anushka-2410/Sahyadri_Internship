@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Stay Hotel</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+
+        /* Header Styling with Background Image */
+        header {
+            background-image: url('vh.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+            z-index: 0;
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 1;
+        }
+        header h1 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            text-align: center;
+            background: #333;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffbe33;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 1500px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            color: #1f3b73;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        section p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        /* Services and Rooms Styling */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .box {
+            width: calc(50% - 10px);
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .box h3 {
+            color: #333;
+            font-size: 1.3em;
+            margin-bottom: 8px;
+        }
+        .box p {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Gallery Styling */
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Testimonials Styling */
+        .testimonials {
+            text-align: left;
+            padding: 15px;
+            margin-top: 10px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial p {
+            font-style: italic;
+            color: #555;
+        }
+        .testimonial h4 {
+            color: #1f3b73;
+            text-align: right;
+        }
+
+        /* Contact Form Styling */
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .contact-form button {
+            background-color: #1f3b73;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .contact-form button:hover {
+            background-color: #ffbe33;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elegant Stay Hotel</h1>
+        <p>Your Home Away from Home</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Elegant Stay Hotel, where luxury meets comfort. Located in the heart of the city, our hotel offers premium services, elegant rooms, and a relaxing atmosphere to make your stay memorable.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="container">
+
+                <div class="box">
+                    <h3>Deluxe Room</h3>
+                    <p>A spacious room with city views, modern amenities, and cozy interiors.</p>
+                </div>
+                <div class="box">
+                    <h3>Suite Room</h3>
+                    <p>Enjoy luxury and comfort in our suite with a private lounge and stunning views.</p>
+                </div>
+                <div class="box">
+                <h3>Free Wi-Fi</h3>
+                <p>Stay connected with our high-speed Wi-Fi available throughout the hotel.</p>
+            </div>
+            <div class="box">
+                <h3>24/7 Room Service</h3>
+                <p>Enjoy round-the-clock room service for your convenience.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="testimonials">
+        <h2>Guest Reviews</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"The staff was incredibly friendly and the room was spotless. Highly recommend!"</p>
+                <h4>- Alex B.</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Beautiful ambiance and exceptional service. Can't wait to come back!"</p>
+                <h4>- Sarah K.</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
