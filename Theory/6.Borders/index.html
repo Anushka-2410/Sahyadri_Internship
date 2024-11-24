@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!---Border Width & colors -->
+    <h1>1.Border Width</h1>
+    <div class="border-2 border-green-100 m-10">
+        <div class="w-96 m-3 p-5 border">Border all Around</div>
+        <div class="w-96 m-3 p-5 border border-2">Border width</div>
+        <div class="w-96 m-3 p-5 border border-4">Border width</div>
+        <div class="w-96 m-3 p-5 border border-8">Border width</div>
+        <div class="w-96 m-3 p-5 border border-x-4 border-red-500">Border width to X axis</div>
+        <div class="w-96 m-3 p-5 border border-y-4 border-red-500">Border width to X axis</div>
+        <div class="w-96 m-3 p-5 border border-r-4 border-red-500">Border width to X axis</div>
+        <div class="w-96 m-3 p-5 border border-l-4 border-red-500">Border width to X axis</div>
+        <div class="w-96 m-3 p-5 border border-t-4 border-red-500">Border width to X axis</div>
+        <div class="w-96 m-3 p-5 border border-b-4 border-red-500">Border width to X axis</div>
+    </div>
+
+    <!-- Border Radius -->
+    <h1>2.Border Radius</h1>
+    <div class="border-2 border-green-100 m-10">
+      <div class="w-96 m-3 p-5 bg-teal-200 rounded">Border Rounded
+</div>
+<div class="w-96 m-3 p-5 bg-teal-200 rounded-md">Border Rounded
+</div>
+<div class="w-96 m-3 p-5 bg-teal-200 rounded-lg">Border Rounded
+</div>
+<div class="w-96 m-3 p-5 bg-teal-200 rounded-xl">Border Rounded
+</div>
+    </div>
+<!-- sm-small
+    md-medium
+    lg-large
+    xl-extra-large
+    etc.......
+     -->
+    <!--Specific Sides-->
+    <h1>Specific Sides</h1>
+    <h1 class="bg-yellow-500">specific side</h1> <br>
+    <div class="rounded-b bg-blue-400 w-1/2 ml-4">tailwind-bottom</div><br>
+    <div class="rounded-t-md bg-blue-400  w-1/2  ml-4">tailwind top</div><br>
+    <div class="rounded-l-lg bg-blue-400  w-1/2  ml-4">tailwind left</div><br>
+    <div class="rounded-r-full bg-blue-400  w-1/2  ml-4">tailwind right</div><br>
+    
+     </div>
+    </body>
+</html>
